@@ -5,4 +5,4 @@ services:
 before_install:
      - docker build -t nchebro/docker-react2 -f Dockerfile.dev .
 script:
-     - docker run -e CI=true chebro/docker-react2 npm run test -- --coverage
+     - docker run -e CI=true nchebro/docker-react2 npm run test -- --coverage
